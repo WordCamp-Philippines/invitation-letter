@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wcph/invitation-letter",
+	"title": "Invitation Letter",
+	"category": "widgets",
+	"icon": "email-alt",
+	"description": "Displays the WordCamp invitation letter with an attendee name/email gate, print and email actions. Optionally override the opening, benefits, and closing text for this instance \u2014 leave blank to use the site-wide Settings text.",
+	"keywords": [ "invitation", "letter", "wordcamp", "certificate" ],
+	"textdomain": "wcph-invitation-letter",
+	"attributes": {
+		"letterBody": {
+			"type": "string",
+			"default": ""
+		},
+		"textAlign": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ]
+	},
+	"editorScript": "wcph-il-block-editor",
+	"style": "wcph-invitation-letter",
+	"render": "file:./render.php"
+}

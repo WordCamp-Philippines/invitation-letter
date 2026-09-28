@@ -1,0 +1,392 @@
+/* Block editor: "Invitation Letter" block fields */
+
+.wcph-il-block-editor {
+	border: 1px solid #d8cdb8;
+	border-radius: 6px;
+	padding: 1.25rem;
+	background: #fffdf8;
+}
+
+.wcph-il-block-field {
+	margin-bottom: 1.25rem;
+}
+
+.wcph-il-block-field:last-of-type {
+	margin-bottom: 0;
+}
+
+.wcph-il-block-field-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem;
+	margin-bottom: 0.4rem;
+}
+
+.wcph-il-block-field-label {
+	font-weight: 600;
+	color: #1e3a5f;
+}
+
+.wcph-il-block-richtext {
+	border: 1px solid #b8ac93;
+	border-radius: 4px;
+	padding: 0.65rem 0.85rem;
+	font-family: 'san-serif';
+	font-size: 1rem;
+	line-height: 1.6;
+	min-height: 2.5rem;
+	background: #fff;
+}
+
+.wcph-il-block-richtext:focus {
+	outline: 2px solid #1e3a5f;
+	outline-offset: -1px;
+}
+
+.wcph-il-block-preview {
+	margin-top: 1.5rem;
+	border-top: 1px solid #d8cdb8;
+	padding-top: 1rem;
+}
+
+.wcph-il-block-preview-label {
+	font-weight: 600;
+	color: #1e3a5f;
+	margin: 0 0 0.5rem;
+}
+
+/* WCPH Invitation Letter — letterhead-style document card */
+
+.wcph-il-wrapper {
+	max-width: 780px;
+	margin: 2rem auto;
+}
+
+.wcph-il-name-form {
+	background: #f4efe3;
+	border: 1px solid #d8cdb8;
+	border-radius: 6px;
+	padding: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.wcph-il-name-form label {
+	display: block;
+	font-weight: 600;
+	color: #1e3a5f;
+	margin-bottom: 0.75rem;
+}
+
+.wcph-il-form-notice {
+	color: #a94442;
+	background: #fbeeee;
+	border: 1px solid #e4b9b9;
+	border-radius: 4px;
+	padding: 0.5rem 0.75rem;
+	font-size: 0.9rem;
+	margin: 0 0 0.75rem;
+}
+
+.wcph-il-name-form-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+}
+
+.wcph-il-name-form input[type="text"],
+.wcph-il-name-form input[type="email"] {
+	flex: 1 1 220px;
+	padding: 0.65rem 0.85rem;
+	border: 1px solid #b8ac93;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.wcph-il-generate-btn {
+	padding: 0.65rem 1.25rem;
+	background: #a0522d;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.wcph-il-generate-btn:hover,
+.wcph-il-generate-btn:focus-visible {
+	background: #813f21;
+}
+
+.wcph-il-change-name {
+	margin: 0 0 1rem;
+}
+
+.wcph-il-change-name a {
+	color: #1e3a5f;
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+
+.wcph-il-change-name a:hover {
+	text-decoration: underline;
+}
+
+.wcph-il-logo {
+	margin-bottom: 0.75rem;
+}
+
+.wcph-il-logo img {
+	max-height: 56px;
+	width: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+.wcph-il-letterhead-heading {
+	font-family: 'Times New Roman', Times, Georgia, serif;
+	font-size: 2.1rem;
+	font-weight: 700;
+	color: #1e3a5f;
+	margin: 0;
+}
+
+.wcph-il-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin-bottom: 1.25rem;
+}
+
+.wcph-il-email-form {
+	margin: 0;
+}
+
+.wcph-il-print-btn,
+.wcph-il-email-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.65rem 1.25rem;
+	border: none;
+	border-radius: 4px;
+	font-size: 0.95rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+.wcph-il-print-btn {
+	background: #1e3a5f;
+	color: #fff;
+}
+
+.wcph-il-print-btn:hover,
+.wcph-il-print-btn:focus-visible {
+	background: #14283f;
+}
+
+.wcph-il-email-btn {
+	background: #fff;
+	color: #1e3a5f;
+	border: 1px solid #1e3a5f;
+}
+
+.wcph-il-email-btn:hover,
+.wcph-il-email-btn:focus-visible {
+	background: #eef1f5;
+}
+
+.wcph-il-email-status {
+	padding: 0.65rem 1rem;
+	border-radius: 4px;
+	font-size: 0.9rem;
+	margin: 0 0 1.25rem;
+}
+
+.wcph-il-email-status--success {
+	color: #1e4620;
+	background: #eaf6ec;
+	border: 1px solid #b7dfbb;
+}
+
+.wcph-il-email-status--error {
+	color: #a94442;
+	background: #fbeeee;
+	border: 1px solid #e4b9b9;
+}
+
+.wcph-il-letter {
+	background: #fffdf8;
+	border: 1px solid #d8cdb8;
+	box-shadow: 0 12px 32px rgba(20, 30, 45, 0.12);
+	padding: 2.75rem 3rem;
+}
+
+.wcph-il-letterhead {
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.wcph-il-date {
+	text-align: right;
+	font-family: sans-serif;
+	color: #5a5347;
+	font-size: 1.15rem;
+	margin: 0 0 1.5rem;
+}
+
+.wcph-il-body {
+	font-family: sans-serif;
+	font-size: 1.35rem;
+	line-height: 1.7;
+	color: #2c2a26;
+}
+
+.wcph-il-body p {
+	margin: 0 0 0.85rem;
+}
+
+.wcph-il-rich {
+	margin: 0 0 0.85rem;
+}
+
+.wcph-il-rich > *:last-child {
+	margin-bottom: 0;
+}
+
+.wcph-il-rich p {
+	margin: 0 0 0.85rem;
+}
+
+.wcph-il-rich ul,
+.wcph-il-rich ol {
+	margin: 0 0 0.85rem;
+	padding-left: 1.5rem;
+}
+
+.wcph-il-rich li {
+	margin: 0 0 0.35rem;
+}
+
+.wcph-il-greeting {
+	font-weight: 700;
+	color: #1e3a5f;
+}
+
+.wcph-il-signoff {
+	margin-top: 1.25rem;
+}
+
+.wcph-il-signoff a {
+	color: #1e3a5f;
+}
+
+@media (max-width: 600px) {
+	.wcph-il-letter {
+		padding: 2rem 1.25rem;
+	}
+
+	.wcph-il-letterhead-heading {
+		font-size: 1.6rem;
+	}
+
+	.wcph-il-date {
+		text-align: left;
+		font-size: 1.05rem;
+	}
+
+	.wcph-il-body {
+		font-size: 1.15rem;
+	}
+}
+
+/* Print styles: clean single Letter-size (8.5in x 11in) page, no button/chrome */
+@page {
+	size: letter;
+	margin: 0.6in;
+}
+
+@media print {
+	.wcph-il-actions,
+	.wcph-il-name-form,
+	.wcph-il-change-name,
+	.wcph-il-email-status {
+		display: none !important;
+	}
+
+	/* Hide the theme chrome around the letter (not just visually — remove it from
+	   flow) so no blank reserved space is left above/below the letter on the printed page. */
+	body > .wp-site-blocks > header.wp-block-template-part,
+	body > .wp-site-blocks > footer.wp-block-template-part,
+	.wp-block-post-title,
+	.skip-link {
+		display: none !important;
+	}
+
+	.wcph-il-wrapper {
+		margin: 0;
+		max-width: 100%;
+	}
+
+	.wcph-il-letter {
+		box-shadow: none;
+		border: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	/* Collapse the theme's content wrappers so nothing but the letter reserves space on the page. */
+	main.wp-block-group,
+	.entry-content,
+	.wp-block-post-content,
+	.wp-site-blocks {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.wcph-il-letterhead {
+		margin-bottom: 0.75rem;
+	}
+
+	.wcph-il-logo img {
+		max-height: 44px;
+	}
+
+	.wcph-il-date {
+		margin-bottom: 1rem;
+	}
+
+	.wcph-il-body {
+		font-size: 1.05rem;
+		line-height: 1.45;
+	}
+
+	.wcph-il-body p {
+		margin: 0 0 0.55rem;
+	}
+
+	.wcph-il-rich {
+		margin: 0 0 0.55rem;
+	}
+
+	.wcph-il-rich p,
+	.wcph-il-rich ul,
+	.wcph-il-rich ol {
+		margin: 0 0 0.55rem;
+	}
+
+	.wcph-il-signoff {
+		margin-top: 0.8rem;
+	}
+
+	/* Avoid splitting the sign-off block mid-way across a page break. */
+	.wcph-il-signoff {
+		break-inside: avoid;
+	}
+
+	.wcph-il-letterhead {
+		break-after: avoid;
+	}
+}
